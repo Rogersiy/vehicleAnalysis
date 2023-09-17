@@ -1,0 +1,5 @@
+app_id : 1118171
+app_key : a25f76a5e41ca0204900496604857630a7602c005661bee22d032cb5ca4f783a
+device : /dev/ttyUSB0
+baudrate : 1000000
+acm_port : /dev/ttyACM0

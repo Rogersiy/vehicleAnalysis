@@ -1,0 +1,5 @@
+gst-launch-1.0 udpsrc name=pay0 port=5400 buffer-size=524288 caps=\"application/x-rtp, media=video, clock-rate=90000, encoding-name=H264, payload=96 \" ! rtph264depay ! h264parse ! nvv4l2decoder ! nvegltransform ! nveglglessink
+
+
+
+gst-launch-1.0 udpsrc name=pay0 port=5400 buffer-size=524288 caps=\"application/x-rtp, media=video, clock-rate=90000, encoding-name=H264, payload=96 \" ! rtph264depay ! h264parse ! flvmux ! rtmpsink location='rtmp://pushtx.shangzhibo.tv/onelive/10718596-PppWnaRAC'
